@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>$VOID - La moneda que no existe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+            font-family: 'Orbitron', sans-serif;
+            color: #cfcfcf;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #ffffff;
+            z-index: 1;
+            text-shadow: 0 0 10px #9900ff;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: 2px solid #ffffff;
+            background: transparent;
+            color: #ffffff;
+            cursor: pointer;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .hero button:hover {
+            background: #9900ff;
+            border-color: #9900ff;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .glitch-text {
+            color: #fff;
+            font-size: 1.3em;
+            text-shadow: 1px 0 magenta, -1px 0 cyan;
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0% {text-shadow: 1px 0 magenta, -1px 0 cyan;}
+            50% {text-shadow: -2px 0 magenta, 2px 0 cyan;}
+            100% {text-shadow: 1px 0 magenta, -1px 0 cyan;}
+        }
+
+        .tokenomics, .roadmap, .holders {
+            margin-top: 50px;
+        }
+
+        .footer {
+            background: #111;
+            padding: 30px 0;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>$VOID - La moneda que no existe<br>(pero te persigue)</h1>
+        <button onclick="void(0)">NO LA COMPRES</button>
+    </div>
+
+    <div class="section">
+        <div class="glitch-text">
+            <p>$VOID no tiene valor, pero todos la desean.</p>
+            <p>No tiene propósito, pero se mete en tu cabeza.</p>
+            <p>No la puedes vender… solo dejar que te consuma.</p>
+        </div>
+
+        <div class="tokenomics">
+            <h2>Tokenomics</h2>
+            <p>69% Comunidad</p>
+            <p>20% Perdido en la oscuridad</p>
+            <p>6.66% Creadores del vacío</p>
+            <p>4.34% Quemado al olvido eterno</p>
+        </div>
+
+        <div class="roadmap">
+            <h2>Roadmap Existencial</h2>
+            <p>Fase 1: Nace la nada</p>
+            <p>Fase 2: Te reís</p>
+            <p>Fase 3: No podés dejar de pensar en ella</p>
+            <p>Fase 4: FOMO colectivo</p>
+            <p>Fase 5: El abismo te mira</p>
+        </div>
+
+        <div class="holders">
+            <h2>Holders del Vacío</h2>
+            <p>Ya son 42 los que miraron al abismo… y no volvieron.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>$VOID es una idea. Nadie lo controla. Nadie lo entiende. Nadie puede escapar.</p>
+    </div>
+
+</body>
+</html>
